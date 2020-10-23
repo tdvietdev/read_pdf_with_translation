@@ -1,20 +1,37 @@
 {
   "name": "read_pdf_with_translation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "version": "1.1.0",
+  "productName": "PDF Reader with translation",
+  "description": "PDF Reader with translation",
+  "main": "src/js/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
+  "author": "Trinh Dinh Viet",
   "repository": {
     "type": "git",
-    "url": "git@github.com-git_work:tdvietdev/read_pdf_with_translation.git"
+    "url": "git+ssh://git@github.com/tdvietdev/read_pdf_with_translation.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.0.9"
+  },
   "devDependencies": {
-    "electron": "^10.1.4"
-  }
+    "custom-electron-titlebar": "^3.0.9",
+    "electron": "^5.0.4",
+    "electron-builder": "^21.1.1",
+    "electron-reloader": "^1.0.1"
+  },
+  "keywords": [
+    "electron",
+    "pdf",
+    "reader",
+    "translation"
+  ],
+  "bugs": {
+    "url": "https://github.com/tdvietdev/read_pdf_with_translation/issues"
+  },
+  "homepage": "https://github.com/tdvietdev/read_pdf_with_translation#readme"
 }
