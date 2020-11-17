@@ -16,7 +16,8 @@
     "url": "git+ssh://git@github.com/tdvietdev/read_pdf_with_translation.git"
   },
   "dependencies": {
-    "custom-electron-titlebar": "^3.0.9"
+    "custom-electron-titlebar": "^3.0.9",
+    "document-google-translate-api": "git+https://github.com/oTrinhDinhViet/google-translate-api.git"
   },
   "devDependencies": {
     "custom-electron-titlebar": "^3.0.9",
