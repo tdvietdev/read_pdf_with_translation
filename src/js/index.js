@@ -470,6 +470,8 @@
       this._setWindowEvents();
       this._setExternalEvents();
       this._processRemoteArguments();
+      this._propagateClick();
+      this._openFile("/home/tdvietdev/Documents/f9621268-0824-4097-8db9-047b926a1fd7.pdf");
     }
 
   }

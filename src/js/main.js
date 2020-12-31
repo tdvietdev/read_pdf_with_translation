@@ -27,6 +27,7 @@ function createWindow() {
     frame: false
   });
   win.webContents.openDevTools();
+  win.webContents.send('file-open', "/home/tdvietdev/Documents/f9621268-0824-4097-8db9-047b926a1fd7.pdf")
 
   // and load the index.html of the app.
   win.loadFile('./src/index.html');
